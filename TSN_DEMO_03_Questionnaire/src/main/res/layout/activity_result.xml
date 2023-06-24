@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Линейное выравнивание на весь экран,
+     используется фоновая картинка "background2" -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Сводные_данные"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#8BC34A"
+        android:textSize="34sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF5722"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBack"
+        android:text="@string/Назад"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onExit"
+        android:text="@string/Выход"/>
+
+</LinearLayout>
